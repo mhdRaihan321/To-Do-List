@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Modal for user input -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="modal-user-name" placeholder="Enter Name" required>
+      <button id="save-name">Save</button>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <h1 id="User"></h1>
+    <h1><u>To-Do List</u> </h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <input type="date" id="task-date" required>
+      <select id="task-category" required>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Others">Others</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="task-list" >
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
